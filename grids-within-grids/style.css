@@ -1,0 +1,44 @@
+.container {
+  width: 100%;
+  min-height: 300px;
+  font-size: 25px;
+  background-color: LightGray;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-gap: 10px;
+  grid-template-areas:
+    "aside header"
+    "aside content"
+    "aside footer";
+}
+
+.item1 {
+  background-color: LightSkyBlue;
+  grid-area: header;
+}
+
+.item2 {
+  background-color: LightSalmon;
+  grid-area: aside;
+}
+
+.item3 {
+  background-color: PaleTurquoise;
+  grid-area: content;
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
+.item4 {
+  background-color: lightpink;
+  grid-area: footer;
+}
+
+.p1 {
+  background-color: PaleGreen;
+}
+
+.p2 {
+  background-color: BlanchedAlmond;
+}
